@@ -97,6 +97,7 @@ abstract class PvpKitInfo extends KitInfo implements PvpKitData{
 		new PvpGenericKitInfo(Item::ARROW, 0, 16, "16 Arrows", 150);
 		new PvpGenericKitInfo(Item::ARROW, 0, 32, "32 Arrows", 300);
 		new PvpGenericKitInfo(Item::ARROW, 0, 64, "64 Arrows", 450);
+		new PvpClickableKitInfo(self::SPECIAL_KNOCKBACK_BOMB, 0, 1);
 	}
 	public static function get($id, $amp, $cnt){
 		foreach(self::$_ as $info){

@@ -29,8 +29,8 @@ class PvpClickableKitInfo extends PvpKitInfo{
 	}
 	public function getBaseHourPrice(){
 		switch($this->typeId){
-			case self::SPECIAL_SPEED:
-
+			case self::SPECIAL_KNOCKBACK_BOMB:
+				return 0;
 		}
 		return 0;
 	}
@@ -39,7 +39,7 @@ class PvpClickableKitInfo extends PvpKitInfo{
 	}
 	public function getTypeName(){
 		switch($this->typeId){
-			case self::SPECIAL_KNOCKAWAY_BOMB:
+			case self::SPECIAL_KNOCKBACK_BOMB:
 				return "Knockback bomb";
 			case self::SPECIAL_SPEED:
 				return "Speed";
