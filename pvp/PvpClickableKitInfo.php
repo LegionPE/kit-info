@@ -94,6 +94,14 @@ class PvpClickableKitInfo extends PvpKitInfo{
 		switch($this->typeId){
 			case self::SPECIAL_SPEED:
 				return 200 + $this->getAmplitude() * 40;
+			case self::SPECIAL_SLOW_BOMB:
+				return 100 + $this->getAmplitude() * 20;
+			case self::SPECIAL_NAUSEA_BOMB:
+				return 150 + $this->getAmplitude() * 20;
+			case self::SPECIAL_JUMP:
+				return 100 + $this->getAmplitude() * 20;
+			case self::SPECIAL_INVISIBILITY:
+
 		}
 		return 0;
 	}
