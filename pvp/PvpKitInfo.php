@@ -18,7 +18,9 @@ namespace libtheta\info\pvp;
 use libtheta\info\KitInfo;
 use pocketmine\item\Item;
 
-@define("STDERR", fopen("php://stderr", "wt"));
+if(!defined("STDERR")){
+	define("STDERR", fopen("php://stderr", "wt"));
+}
 
 abstract class PvpKitInfo extends KitInfo implements PvpKitData{
 	/** @var PvpKitInfo[] */
