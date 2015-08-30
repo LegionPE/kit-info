@@ -25,12 +25,12 @@ class PvpClickableKitInfo extends PvpKitInfo{
 		$this->typeId = $type;
 	}
 	public function getHourPrice(){
-		return $this->getBaseHourPrice() * $this->getAmplitude() * $this->getCount();
+		return $this->getBaseHourPrice() * (1 + $this->getAmplitude()) * $this->getCount();
 	}
 	public function getBaseHourPrice(){
 		switch($this->typeId){
 			case self::SPECIAL_KNOCKBACK_BOMB:
-				return 0;
+				return 50;
 		}
 		return 0;
 	}
