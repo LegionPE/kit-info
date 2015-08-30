@@ -68,10 +68,6 @@ abstract class PvpKitInfo extends KitInfo implements PvpKitData{
 		self::$_[] = $info;
 	}
 	public static function init(){
-		new PvpArmorKitInfo(self::ARMOR_MATERIAL_LEATHER, self::ARMOR_SLOT_HELMET);
-		new PvpArmorKitInfo(self::ARMOR_MATERIAL_LEATHER, self::ARMOR_SLOT_CHESTPLATE);
-		new PvpArmorKitInfo(self::ARMOR_MATERIAL_LEATHER, self::ARMOR_SLOT_LEGGINGS);
-		new PvpArmorKitInfo(self::ARMOR_MATERIAL_LEATHER, self::ARMOR_SLOT_BOOTS);
 		new PvpArmorKitInfo(self::ARMOR_MATERIAL_GOLD, self::ARMOR_SLOT_HELMET);
 		new PvpArmorKitInfo(self::ARMOR_MATERIAL_GOLD, self::ARMOR_SLOT_CHESTPLATE);
 		new PvpArmorKitInfo(self::ARMOR_MATERIAL_GOLD, self::ARMOR_SLOT_LEGGINGS);
@@ -99,7 +95,8 @@ abstract class PvpKitInfo extends KitInfo implements PvpKitData{
 		new PvpGenericKitInfo(Item::ARROW, 0, 16, "16 Arrows", 150);
 		new PvpGenericKitInfo(Item::ARROW, 0, 32, "32 Arrows", 300);
 		new PvpGenericKitInfo(Item::ARROW, 0, 64, "64 Arrows", 450);
-		new PvpClickableKitInfo(self::SPECIAL_KNOCKBACK_BOMB, 0, 1);
+		new PvpClickableKitInfo(self::SPECIAL_KNOCKBACK_BOMB, 0, 2);
+		new PvpClickableKitInfo(self::SPECIAL_KNOCKBACK_BOMB, 1, 4);
 	}
 	public static function get($id, $amp, $cnt){
 		foreach(self::$_ as $info){
