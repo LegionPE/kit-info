@@ -101,7 +101,6 @@ class PvpClickableKitInfo extends PvpKitInfo{
 			case self::SPECIAL_JUMP:
 				return 100 + $this->getAmplitude() * 20;
 			case self::SPECIAL_INVISIBILITY:
-
 		}
 		return 0;
 	}
