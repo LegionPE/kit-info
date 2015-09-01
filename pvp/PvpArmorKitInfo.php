@@ -16,7 +16,7 @@
 namespace libtheta\info\pvp;
 
 class PvpArmorKitInfo extends PvpKitInfo{
-	const BASE_PRICE = 1;
+	const BASE_PRICE = 0.14;
 	protected function __construct($material, $slot){
 		parent::__construct(self::CAT_ARMOR | $material | $slot, 0, 1);
 	}

@@ -18,7 +18,7 @@ namespace libtheta\info\pvp;
 use pocketmine\item\Item;
 
 class PvpFoodKitInfo extends PvpKitInfo{
-	const BASE_FOOD_PRICE = 4;
+	const BASE_FOOD_PRICE = 2.5;
 	const MELON = 1;
 	const COOKIE = 2;
 	const CARROT = 3;
