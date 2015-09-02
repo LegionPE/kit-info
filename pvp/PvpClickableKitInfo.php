@@ -66,7 +66,7 @@ class PvpClickableKitInfo extends PvpKitInfo{
 		return 0;
 	}
 	public function name(){
-		return $this->getCount() . " " . $this->getTypeName() . " (" . MUtils::romanic_number($this->getAmplitude() + 1) . ") (button)";
+		return $this->getCount() . " " . $this->getTypeName() . " " . MUtils::romanic_number($this->getAmplitude() + 1) . " (@" . ($this->getDuration() / 20) . "s long" . ($this->isBomb() ? (", " . $this->getRadius() . "m radius") : "") . ")";
 	}
 	public function getTypeName(){
 		switch($this->typeId){
