@@ -20,7 +20,7 @@ class PvpArmorKitInfo extends PvpKitInfo{
 	protected function __construct($material, $slot){
 		parent::__construct(self::CAT_ARMOR | $material | $slot, 0, 1);
 	}
-	public function getUpgardes(){
+	public function getUpgrades(){
 		$out = [];
 		foreach(self::$_ as $info){
 			if($info instanceof PvpArmorKitInfo and $info->getSlot() === $this->getSlot() and $info->getMaterial() > $this->getMaterial()){
